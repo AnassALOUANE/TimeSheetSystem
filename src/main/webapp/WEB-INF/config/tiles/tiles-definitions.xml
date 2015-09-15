@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  
+    <definition name="LayoutTemplate" template="/WEB-INF/template/default/template.jsp">
+        <put-attribute name="header" value="/WEB-INF/template/default/header.jsp" />
+        <!--<put-attribute name="headingBar" value="/WEB-INF/template/default/headingBar.jsp" />-->
+        <put-attribute name="menu" value="/WEB-INF/template/default/menu.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/template/default/footer.jsp" />
+    </definition>
+    
+    <definition name="EmployeeTemplate" extends="LayoutTemplate">
+        <put-attribute name="header" value="/WEB-INF/template/Employee/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/template/Employee/menu.jsp" />
+    </definition>
+    
+    <definition name="ManagerTemplate" extends="LayoutTemplate">
+        <put-attribute name="header" value="/WEB-INF/template/Manager/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/template/Manager/menu.jsp" />
+    </definition>
+  
+    <definition name="AccountingTemplate" extends="LayoutTemplate">
+        <put-attribute name="header" value="/WEB-INF/template/Accounting/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/template/Accounting/menu.jsp" />
+    </definition>
+    
+    <definition name="ExecutifTemplate" extends="LayoutTemplate">
+        <put-attribute name="header" value="/WEB-INF/template/Executif/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/template/Executif/menu.jsp" />
+    </definition>
+    
+    
+    
+</tiles-definitions>

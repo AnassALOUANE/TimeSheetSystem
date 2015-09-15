@@ -1,0 +1,48 @@
+<html>
+
+<style type="text/css"> 
+   </style>
+    <body style='background-color:#F6F6F6;padding-left:10px;'>
+    <table>
+    <tr>
+    <td><h3>Bonjour M/Mme ${collaborateur.nom} ${collaborateur.prenom}</h3></td></tr>
+    <tr>
+    <td>
+    <p>
+           Notre Responsable de formtion M/Mme ${resp_f.nom} ${resp_f.prenom} vous invitez a s'inscrire a une nouvelle formation de ${inscription.session.formation.titre}
+     </p> 
+     </td>
+    </tr> 
+    <tr>
+    <td>
+     clique sur le lien ci-dessous pour confirmer l'inscription <br/><br/>
+     </td>
+    <tr>
+    <td>
+    
+     </td>
+    </table>		    
+        <button id='buton' style="margin-right:8px;" type="button"> 
+            	<a href="http://${serverUrl}/${inscription.id_insc}/confirmation_insc/${collaborateur.id_u}/confirm">confirmer</a>
+    </button>
+
+    <button id='buton' style="margin-right:8px;" type="button"> 
+            	<a  href="http://${serverUrl}/${inscription.id_insc}/confirmation_insc/${collaborateur.id_u}/cancel">annuler</a>
+    </button>
+        
+        
+         <br/><br/><br/><br/><br/> 
+           
+        <p>	
+  -----------------------------   
+  <br/><br/>  
+ Merci  Cordialement
+ 
+ <br/><br/> 
+        </p><br/>
+ 
+        
+      
+    </body>
+ 
+</html>
